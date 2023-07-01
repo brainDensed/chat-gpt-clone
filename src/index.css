@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(238, 236, 236); 
+  border-radius: 10px;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.bottom-section{
+  width: inherit;
+}
+.app-dark{
+  font-family: 'Open Sans', sans-serif;
+  color: #ffffff;
+  background-color: #343541;
+  display: flex;
+}
+.side-bar-dark{
+  background-color: #202123;
+  height: 100vh;
+  width: 244px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.button-dark{
+  color: white;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+.nav-dark{
+  border-top: solid 0.5px rgba(255, 255, 255, 0.5px);
+  padding: 10px;
+  margin: 10px;
+}
+.history{
+  padding: 10px;
+  margin: 10px;
+  height: 100%;
+}
+.history li{
+  list-style-type: none;
+  padding: 15px 0;
+  cursor: pointer;
+}
+.info-dark{
+  color: rgba(255, 255, 255, 0.5px);
+  font-size: 11px;
+  padding: 10px;
+}
+.input-container{
+  position: relative;
+}
+.textarea-dark{
+  color: white;
+  padding: 14px 14px;
+  height: 27px;
+  width: 90%;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.textarea-dark:focus{
+  outline: 3px;
+  outline-style: solid;
+  outline-color: slategray;
+}
+#submit{
+  position: absolute;
+  width: 5%;
+  font-size: 30px;
+  bottom: 13px;
+  right: 0;
+  cursor: pointer;
+}
+span{
+  font-weight: bold;
+}
+.feed-dark, .feed{
+  overflow: auto;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+.feed-dark li{
+  display: flex;
+  border-radius: 10px;
+  background-color: #11131e;
+  margin-bottom: 2%;
+}
+.feed-dark .user{
+  background-color: #202c3d;
+}
+.feed-dark .assistant {
+  background-color: #24252b;
+}
+.feed-dark p{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  text-align: left;
+  margin-left: 10px;
+}
+.user{
+  max-width: 55%;
+  margin-left: auto;
+  margin-right: 2%;
+}
+.assistant{
+  max-width: 55%;
+  margin-right: auto;
+  margin-left: 2%;
+}
+.content{
+  width: 90%;
+}
+.role{
+  font-weight: bolder;
+  font-size: xx-large;
+  opacity: 0.6;
+}
+#overlay-dark{
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(7, 7, 7, 0.8); /* Black background with opacity */
+  z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+#text-dark{
+  position: absolute;
+  opacity: 0.5;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
+.toggle-button{
+  display: flex;
+  width: 100%;
+  justify-content: end;;
+}
+/*light mode*/
+.app{
+  font-family: 'Open Sans', sans-serif;
+  color: #1a1919;
+  background-color: #aaaaaa;
+  display: flex;
+}
+.side-bar{
+  background-color: #ffffff;
+  height: 100vh;
+  width: 244px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.button{
+  border-color: #fbf6f6;
+  background-color: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+.nav{
+  border-top: solid 0.5px rgba(0, 0, 0, 0.5px);
+  padding: 10px;
+  margin: 10px;
+}
+.info{
+  color: rgba(0, 0, 0, 0.5px);
+  font-size: 11px;
+  padding: 10px;
+}
+.textarea{
+  padding: 14px 14px;
+  height: 27px;
+  width: 90%;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.649);
+}
+.textarea:focus{
+  outline: 3px;
+  outline-style: solid;
+  outline-color: rgb(49, 62, 75);
+}
+.feed li{
+  display: flex;
+  border-radius: 10px;
+  background-color: rgb(228, 232, 255);
+  margin-bottom: 2%;
+}
+.feed .user{
+  background-color: #6c7f9b;
+}
+.feed .assistant {
+  background-color: #6d9783;
+}
+.feed p{
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  text-align: left;
+  margin-left: 10px;
+}
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8); /* Black background with opacity */
+  z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+#text{
+  position: absolute;
+  opacity: 0.5;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: black;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
