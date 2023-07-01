@@ -18,7 +18,7 @@ body{
   padding: 0;
 }
 .bottom-section{
-  width: inherit;
+  width: 75%;
 }
 .app-dark{
   font-family: 'Open Sans', sans-serif;
@@ -71,6 +71,7 @@ body{
   padding: 10px;
 }
 .input-container{
+  display: flex;
   position: relative;
 }
 .textarea-dark{
@@ -90,11 +91,13 @@ body{
 }
 #submit{
   position: absolute;
-  width: 5%;
+  width: 4%;
   font-size: 30px;
-  bottom: 13px;
+  bottom: 8px;
   right: 0;
   cursor: pointer;
+  background-color: #449f74;
+  border-radius: 10%;
 }
 span{
   font-weight: bold;
@@ -102,7 +105,7 @@ span{
 .feed-dark, .feed{
   overflow: auto;
   height: 100%;
-  width: 100%;
+  width: 75%;
   padding: 0;
 }
 .feed-dark li{
