@@ -68,7 +68,6 @@ body{
 .info-dark{
   color: rgba(255, 255, 255, 0.5px);
   font-size: 11px;
-  padding: 10px;
 }
 .input-container{
   display: flex;
@@ -90,10 +89,11 @@ body{
   outline-color: slategray;
 }
 #submit{
+  box-shadow: 0px 0px 0.9em #82ebcc;
   position: absolute;
   width: 4%;
   font-size: 30px;
-  bottom: 8px;
+  bottom: 7px;
   right: 0;
   cursor: pointer;
   background-color: #449f74;
@@ -129,7 +129,7 @@ span{
 .user{
   max-width: 55%;
   margin-left: auto;
-  margin-right: 2%;
+  margin-right: 9%;
 }
 .assistant{
   max-width: 55%;
@@ -201,7 +201,6 @@ span{
 .info{
   color: rgba(0, 0, 0, 0.5px);
   font-size: 11px;
-  padding: 10px;
 }
 .textarea{
   padding: 14px 14px;
