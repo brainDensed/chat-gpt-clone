@@ -214,7 +214,7 @@ span{
 .textarea:focus{
   outline: 3px;
   outline-style: solid;
-  outline-color: rgb(49, 62, 75);
+  outline-color: slategrey;
 }
 .feed li{
   display: flex;
@@ -255,4 +255,9 @@ span{
   color: black;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
+}
+.mode{
+  font-size: 35px;
+  padding: revert;
+  margin: revert;
 }
