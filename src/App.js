@@ -91,7 +91,7 @@ const App = () => {
         </section>
         <section className="main">
         <div className="toggle-button"><button className={toggleDark ? 'button-dark mode' : 'button mode'} onClick={() => setToggleDark(!toggleDark)}>{toggleDark ? '🌁' : '🌆'}</button></div>
-          {!currentTitle && <h1>HashGPT</h1>}
+          {!currentTitle && <h1>CYBORG</h1>}
           <ul className={toggleDark ? "feed-dark" : 'feed'}>
             {currentChat?.map((chatMessage, index) => (
               <li key={index} className={chatMessage.role === 'user' ? 'user' : 'assistant'}>

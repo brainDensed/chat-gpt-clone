@@ -23,11 +23,11 @@ body{
 .app-dark{
   font-family: 'Open Sans', sans-serif;
   color: #ffffff;
-  background-color: #343541;
+  background-image: linear-gradient(0, rgb(57, 57, 57), rgb(62, 62, 107));
   display: flex;
 }
 .side-bar-dark{
-  background-color: #202123;
+  background-image: linear-gradient(0, black, rgb(62, 62, 107));
   height: 100vh;
   width: 244px;
   display: flex;
@@ -44,7 +44,7 @@ body{
   text-align: center;
 }
 .button-dark{
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: transparent;
   border-radius: 5px;
   padding: 10px;
@@ -111,14 +111,13 @@ span{
 .feed-dark li{
   display: flex;
   border-radius: 10px;
-  background-color: #11131e;
   margin-bottom: 2%;
 }
 .feed-dark .user{
-  background-color: #202c3d;
+  background-image: linear-gradient(0, black, rgb(79, 79, 158));
 }
 .feed-dark .assistant {
-  background-color: #24252b;
+  background-image: linear-gradient(0, black, rgb(79, 158, 100))
 }
 .feed-dark p{
   color: rgba(255, 255, 255, 0.8);
@@ -175,11 +174,11 @@ span{
 .app{
   font-family: 'Open Sans', sans-serif;
   color: #1a1919;
-  background-color: #aaaaaa;
+  background-image: linear-gradient(0, rgb(211, 205, 255), rgb(218, 218, 218));
   display: flex;
 }
 .side-bar{
-  background-color: #ffffff;
+  background-image: linear-gradient(0, rgb(252, 252, 252), rgb(208, 208, 255));
   height: 100vh;
   width: 244px;
   display: flex;
@@ -223,10 +222,10 @@ span{
   margin-bottom: 2%;
 }
 .feed .user{
-  background-color: #6c7f9b;
+  background-image: linear-gradient(0, rgb(255, 255, 255), rgb(95, 95, 142));
 }
 .feed .assistant {
-  background-color: #6d9783;
+  background-image: linear-gradient(0, rgb(255, 255, 255), rgb(22, 101, 77));
 }
 .feed p{
   color: rgba(0, 0, 0, 0.8);
